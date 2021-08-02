@@ -513,9 +513,9 @@ a {
             color: #FFF;
             
             &:hover {
-                background: $color-dark;
-                border-color: $color-dark;
-                color: #FFF;
+                background: rgba(16, 16, 29, 0.9);
+                color: $color-blue;
+                border-color: $color-blue;
                 transition: 0.3s;
             }
         }
@@ -526,9 +526,9 @@ a {
             color: #2A2B30;
             
             &:hover {
-                background: $color-dark;
-                border-color: $color-dark;
-                color: #FFF;
+                background: rgba(16, 16, 29, 0.9);
+                color: $color-blue;
+                border-color: $color-blue;
                 transition: 0.3s;
             }
         }
@@ -822,6 +822,10 @@ a {
             outline-offset: 0;
         }
         
+        &:hover {
+            border-color: $color-blue;
+        }
+        
         &_hidden {
             display: none;
         }
@@ -870,6 +874,7 @@ a {
             color: #FFF;
             cursor: pointer;
             padding-right: 10px;
+            transition: 0.3s;
             
             @media (max-width: $screen-xl) {
                 font-size: 13px;
@@ -900,6 +905,13 @@ a {
 
             &:-ms-input-placeholder {  
                text-align:center; 
+            }
+            
+            &:hover {
+                background: rgba(16, 16, 29, 0.9);
+                color: $color-blue;
+                border-color: $color-blue;
+                transition: 0.3s;
             }
         }
     }
