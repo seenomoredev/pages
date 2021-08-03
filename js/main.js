@@ -9,8 +9,8 @@ $('.select').click(function () {
 $('.select__option').click(function () {
     $('.select__option').removeClass("select__option_current");
     $(this).addClass("select__option_current");
-    $('input[name="system"]').val( $(this).text() );
-    var res = $('input[name="system"]').val();
+    $('input[name="formsystem"]').val( $(this).text() );
+    var res = $('input[name="formsystem"]').val();
     $('.select__name').html( $(this).text() );
     console.log( res );
 });
@@ -25,8 +25,7 @@ $( ".slider__slider" ).slider({
     slide: function( event, ui ) {
         var sliderval = $( ".slider__slider" ).slider( "values" );
         $(".slider__value span").text(ui.value);
-        $('input[name="system"]').val(ui.value);
-        console.log( $('input[name="system"]').val() );
+        $('input[name="formslider"]').val(ui.value);
+        console.log( $('input[name="formslider"]').val() );
     }
 });
-
